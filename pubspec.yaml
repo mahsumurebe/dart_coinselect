@@ -1,6 +1,6 @@
 name: dart_coinselect
 description: An unspent transaction output (UTXO) selection module for bitcoin.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/mahsumurebe/dart_coinselect
 
 environment:
