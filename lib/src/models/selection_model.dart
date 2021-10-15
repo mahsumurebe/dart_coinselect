@@ -1,5 +1,6 @@
 import 'package:dart_coinselect/src/models/models.dart';
 
+// The model class used for the selecting result
 class SelectionModel {
   int fee;
 
@@ -8,6 +9,7 @@ class SelectionModel {
 
   SelectionModel(this.fee, {this.inputs, this.outputs});
 
+  // Compares two SelectionModels. Checks equality status
   isEqual(SelectionModel other) {
     bool inputOk = inputs == null && other.inputs == null;
     bool outputOk = outputs == null && other.outputs == null;

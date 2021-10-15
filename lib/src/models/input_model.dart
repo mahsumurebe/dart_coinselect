@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:convert/convert.dart';
 import 'package:dart_coinselect/src/abstracts/io_model_abstract.dart';
 
+// Input Model
 class InputModel extends IOModelAbstract {
   int i;
   String? txid;
@@ -19,6 +20,7 @@ class InputModel extends IOModelAbstract {
   InputModel(
       {required this.i, this.txid, this.value, this.script, this.address});
 
+  // Compares two InputModels. Checks equality status
   isEqual(InputModel other) {
     bool scriptOk = script == null && other.script == null;
     if (script != null && other.script != null) {

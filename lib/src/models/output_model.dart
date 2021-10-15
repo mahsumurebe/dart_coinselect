@@ -3,6 +3,7 @@ import 'dart:typed_data';
 import 'package:convert/convert.dart';
 import 'package:dart_coinselect/src/abstracts/io_model_abstract.dart';
 
+// Output Model
 class OutputModel extends IOModelAbstract {
   @override
   ByteData? script;
@@ -21,6 +22,7 @@ class OutputModel extends IOModelAbstract {
     address = other.address;
   }
 
+  // Compares two OutputModels. Checks equality status
   isEqual(OutputModel other) {
     bool scriptOk = script == null && other.script == null;
     if (script != null && other.script != null) {

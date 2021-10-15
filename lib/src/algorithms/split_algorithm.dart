@@ -1,8 +1,8 @@
-// split utxos between each output, ignores outputs with .value defined
 import 'package:dart_coinselect/src/models/models.dart';
 import 'package:dart_coinselect/src/models/selection_model.dart';
 import 'package:dart_coinselect/src/utils.dart' as utils;
 
+// split utxos between each output, ignores outputs with .value defined
 SelectionModel splitAlgorithm(
     List<InputModel> utxos, List<OutputModel> outputs, int feeRate) {
   int bytesAccum = utils.transactionBytes(utxos, outputs);
