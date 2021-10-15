@@ -4,6 +4,10 @@ An unspent transaction output (UTXO) selection module for bitcoin.
 
 **WARNING:** Value units are in `satoshi`s, **not** Bitcoin.
 
+## Installation
+
+    dart pub add dart_coinselect
+
 ## Algorithms
 Module | Algorithm | Re-orders UTXOs?
 -|-|-
