@@ -1,0 +1,14 @@
+name: dart_coinselect
+description: A starting point for Dart libraries or applications.
+version: 1.0.0
+homepage: https://github.com/mahsumurebe/dart_coinselect
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  convert: ^3.0.1
+
+dev_dependencies:
+  lints: ^1.0.0
+  test: ^1.16.0
